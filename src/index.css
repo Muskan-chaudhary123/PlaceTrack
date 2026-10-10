@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-navy-dark: #0f172a;
+  --color-brand-bg: #f8fafc;
+  --color-brand-border: #e2e8f0;
+
+  --text-2xs: 0.8125rem; 
+  --text-xs: 0.875rem;   
+  --text-xs--line-height: 1.25rem;
+  --text-sm: 0.9375rem;  
+  --text-sm--line-height: 1.375rem;
+  --text-base: 1rem;     
+  --text-base--line-height: 1.5rem;
+  --text-lg: 1.125rem;   
+  --text-lg--line-height: 1.625rem;
+  --text-xl: 1.25rem;    
+  --text-xl--line-height: 1.75rem;
+  --text-2xl: 1.5rem;    
+  --text-2xl--line-height: 2rem;
+  --text-3xl: 1.875rem;  
+  --text-3xl--line-height: 2.25rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+*:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+
+.text-\[9px\], 
+.text-\[10px\], 
+.text-\[11px\], 
+.text-\[12px\], 
+.text-\[13px\] {
+  font-size: 0.875rem !important; 
+  line-height: 1.25rem !important;
+}
+
+input, 
+select, 
+textarea {
+  font-size: 0.9375rem !important; 
+  line-height: 1.375rem;
+}
+
+
+label {
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+}
+
+
+button:not(.text-2xl):not(.text-3xl):not(.text-xl) {
+  font-size: 0.9375rem; 
+}
+
+
+table th {
+  font-size: 0.875rem !important; 
+  letter-spacing: 0.04em;
+}
+
+table td {
+  font-size: 0.9375rem !important; 
+}
+
+
+.dark html, .dark body, .dark #root {
+  background-color: #0f172a; 
+  color: #cbd5e1; 
+}
+
+
+.dark .bg-slate-50 {
+  background-color: #0b0f19 !important; 
+}
+
+.dark .bg-white {
+  background-color: #1e293b !important; 
+}
+
+
+.dark .hover\:bg-slate-50\/50:hover {
+  background-color: rgba(51, 65, 85, 0.4) !important;
+}
+
+.dark .hover\:bg-slate-50:hover {
+  background-color: rgba(51, 65, 85, 0.6) !important;
+}
+
+.dark .border-slate-200, 
+.dark .border-slate-100,
+.dark .border-slate-300,
+.dark .border-slate-150 {
+  border-color: #334155 !important; 
+}
+
+.dark .divide-slate-100 > * + *,
+.dark .divide-slate-200 > * + * {
+  border-color: #334155 !important;
+}
+
+
+.dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+.dark .text-slate-800 {
+  color: #f1f5f9 !important; 
+}
+
+.dark .text-slate-700 {
+  color: #e2e8f0 !important; 
+}
+
+.dark .text-slate-600 {
+  color: #cbd5e1 !important; 
+}
+
+.dark .text-slate-500 {
+  color: #94a3b8 !important; 
+}
+
+.dark .text-slate-450,
+.dark .text-slate-400 {
+  color: #64748b !important; 
+}
+
+
+.dark .bg-slate-100 {
+  background-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+
+.dark .bg-blue-50 {
+  background-color: rgba(37, 99, 235, 0.2) !important;
+  color: #93c5fd !important;
+}
+
+.dark .bg-emerald-50 {
+  background-color: rgba(16, 185, 129, 0.2) !important;
+  color: #6ee7b7 !important;
+}
+
+.dark .bg-orange-50 {
+  background-color: rgba(245, 158, 11, 0.2) !important;
+  color: #fde047 !important;
+}
+
+.dark .bg-red-50 {
+  background-color: rgba(239, 68, 68, 0.2) !important;
+  color: #fca5a5 !important;
+}
+
+.dark .bg-purple-50 {
+  background-color: rgba(139, 92, 246, 0.2) !important;
+  color: #d8b4fe !important;
+}
+
+
+.dark input, 
+.dark select, 
+.dark textarea {
+  background-color: #0f172a !important; 
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+
+.dark input::placeholder, 
+.dark textarea::placeholder {
+  color: #475569 !important; 
+}
+
+.dark .bg-slate-900\/40 {
+  background-color: rgba(15, 23, 42, 0.8) !important;
+}
+
