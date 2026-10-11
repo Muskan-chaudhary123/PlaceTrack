@@ -141,7 +141,7 @@ export const ResourceForm = ({ resource, onClose, onSubmit, isSubmitting = false
     setRemoveFile(false);
     setErrors((prev) => {
       const copy = { ...prev };
-      del copy.file;
+      delete copy.file;
       return copy;
     });
 
